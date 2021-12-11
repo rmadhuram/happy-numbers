@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body, div#graph {
+        background-color: #fff; /* Carbon: ui-02 */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+
+      #info {
+        margin-top: 100px;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="graph" style="text-align: center;">
+      <div id="info">Rendering... Please wait!</div>
+    </div>
+
+    <script src="//d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+    <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+    <script src="happy-dot.js"></script>
+  </body>
+</html>
+
